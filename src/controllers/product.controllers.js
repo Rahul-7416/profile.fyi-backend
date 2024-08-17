@@ -26,7 +26,7 @@ const getProducts = asyncHandler(async (req, res) => {
 
     // returning response
     return res.status(200).json(
-        new ApiResponse(200, { allCartProducts }, "All products in the cart fetched successfully")
+        new ApiResponse(200, { allItems: allCartProducts }, "All products in the cart fetched successfully")
     );
 });
 
