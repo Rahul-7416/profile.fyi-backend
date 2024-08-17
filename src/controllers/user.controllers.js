@@ -186,6 +186,7 @@ const logoutUser = asyncHandler(async (req, res) => {
     const options = {
         httpOnly: true,
         secure: true,
+        sameSite: 'None',
     }
 
     // returning the res -> and clearing the cookies containing the access and refresh tokens
