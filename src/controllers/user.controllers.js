@@ -99,7 +99,8 @@ const loginUser = asyncHandler(async (req, res) => {
     // cookie options
     const options = {
         httpOnly: true,
-        secure: true
+        secure: true,
+        sameSite: 'None',
     }
 
     // returning the response along with tokens as cookies
