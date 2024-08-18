@@ -63,7 +63,12 @@ The frontend of this application is available at: [Profile.fyi-assignment Fronte
 
 - `POST /api/v1/users/register` - User registration
 - `POST /api/v1/users/login` - User login
+- `POST /api/v1/users/refresh-token` - refresh the tokens
+- `POST /api/v1/users/logout` - User logout
 - `GET /api/v1/products/` - Get cart products saved by user
+- `POST /api/v1/products/add-product` - add a new product to the cart
+- `PUT /api/v1/products/update-product` - Update any specific cart product
+- `DELETE /api/v1/products/remove-product` - Delete any specific cart product
 
 ## Contributing
 
